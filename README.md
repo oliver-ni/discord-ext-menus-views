@@ -2,6 +2,8 @@
 
 A simple layer over [discord.ext.menus](https://github.com/Rapptz/discord-ext-menus) using the new `discord.ui` components in [discord.py](https://github.com/Rapptz/discord.py) v2.0.
 
+For those who do not want to rewrite their code to use the new framework, this library makes it easy to switch to views by changing just a couple of lines of code.
+
 ## Installing
 
 Make sure you are using [discord.py](https://github.com/Rapptz/discord.py) v2.0 or above, probably from the master branch. Install this library from git:
