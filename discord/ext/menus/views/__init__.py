@@ -94,7 +94,7 @@ class ViewMenu(menus.Menu):
         try:
             self.__timed_out = await self.view.wait()
         except Exception as e:
-            print(e)
+            self.__timed_out = False
         finally:
             self._event.set()
 
