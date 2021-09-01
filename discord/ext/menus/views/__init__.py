@@ -91,10 +91,11 @@ class ViewMenu(menus.Menu):
             return dummy()
 
     async def _internal_loop(self):
+        self.__timed_out = False
         try:
             self.__timed_out = await self.view.wait()
-        except Exception as e:
-            self.__timed_out = False
+        except Exception:
+            pass
         finally:
             self._event.set()
 
