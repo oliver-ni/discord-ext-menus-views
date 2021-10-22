@@ -4,15 +4,13 @@ version = "0.1.0"
 description = "A discord.ext.menus Menu backed by Views and Buttons instead of reactions."
 authors = ["Oliver Ni <oliver.ni@gmail.com>"]
 license = "MIT"
-packages = [
-    { include = "discord" }
-]
+packages = [{ include = "discord" }]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-"discord.py" = { git = "https://github.com/Rapptz/discord.py.git", branch = "master" }
 
 [tool.poetry.dev-dependencies]
+"discord.py" = { git = "https://github.com/Rapptz/discord.py.git", branch = "master" }
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

@@ -12,6 +12,8 @@ Make sure you are using [discord.py](https://github.com/Rapptz/discord.py) v2.0 
 pip install git+https://github.com/oliver-ni/discord-ext-menus-views
 ```
 
+For maximum compatibility, this library does not list discord.py as a dependency. You must provide it yourself.
+
 ## Usage
 
 This library provides two classes, `ViewMenu` and `ViewMenuPages`, which replace `Menu` and `MenuPages`, respectively. These classes aim to be as close as possible to the original classes, but use views (buttons) instead of reactions.
