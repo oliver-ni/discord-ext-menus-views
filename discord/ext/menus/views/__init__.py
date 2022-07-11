@@ -128,7 +128,7 @@ class ViewMenu(menus.Menu):
         self.ctx = ctx
         self._author_id = ctx.author.id
         channel = channel or ctx.channel
-        is_guild = hasattr(channel, "guild") 
+        is_guild = hasattr(channel, "guild") and channel.guild is not None
         me = channel.guild.me if is_guild else ctx.bot.user
         permissions = channel.permissions_for(me)
         self._verify_permissions(ctx, channel, permissions)
